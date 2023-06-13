@@ -1,0 +1,10 @@
+<form action="">
+  ¿Qué quieres hacer?
+  <p></p>
+  <p *ngFor="let s of arrayServicios">
+  <label><input type="checkbox" [value]="s.id" [checked]="s.select" (change)="cambiaOpcion($event)"> {{s.servicio}}</label><br>
+  </p>
+
+  Precio: {{ total }} €
+</form>
+
